@@ -1,192 +1,38 @@
-# #1
-# a = 10
-# b = 20
-# c = a + b
-# print(c)
+if "salman":
+    print("bachelor")
+else:
+    print("He is not a bacherlor")
 
-# print(type(c))
-# d=str(c)
-# print(type(d))
-
-# #2
-
-# x = "100"
-# y = 20
-# z=int(x)+ y
-# print(z)
-# print(type(z))
-
-# z=float(z)
-# print(type(z))
-
-# #3
-
-# a=0
-# b=5
-
-# print(bool(a))
-# print(bool(b))
-
-# print(a<b and b>0)
-
-# #4
-
-# s = "python developer"
-# print(s[0])
-# print(s[-1])
-# print(s[7:])
-# print(s[::-1])
-
-# #5
-
-# s = "  Learn Python Fast. Python is an important programming language. " 
-# s=s.strip()
-# print(s.upper())
-# print(s.replace("Python","Django",1))
-
-# #6
-# email = "avinash@gmail.com"
-# if "@" in email:
-#     print("yes")
-
-# # if "gmail.com" in email:
-# #     print("yes")
-
-# if email.endswith("gmail.com"):
-#     print("yes")
-
-# #7.
-
-# nums = [10, 20, 30, 40, 50]
-# nums.append(60)
-# print(nums)
-
-# nums.remove(30)
-# print(nums)
-
-# print(len(nums))
-# print(nums[-3:])
-
-# #8
-
-# nums = [1, 2, 3, 4, 5]
-# squares=[]
-# for i in nums:
-#     squares.append(i*i)
-# print(squares)
-
-# #method:2
-# nums=[1,2,3,4,5]
-# squares=[i*i for i in nums]
-# print(squares)
-
-#9
-
-data = [10, "python", 3.5, True]
-
-for el in data:
-    if type(el)==int:
-        print(el)
-
-for el in data:
-    print(type(el))
-
-# #10
-
-# t = (10, 20, 30)
-# # t[1]=25 # TypeError: 'tuple' object does not support item assignment
-# # print(t)
-
-# l=list(t)
-# print(l)
-# l[1]=25
-# print(l)
-# t=tuple(l)
-# print(t)
-
-# #11
-
-# a = {10, 20, 30, 40}
-# b = {30, 40, 50, 60}
-
-# print(a.intersection(b))
-
-# for ele in a:
-#     print(a-b)
-
-# print(a.union(b))
-
-# #12
-
-# student = {
-#     "name": "Avinash",
-#     "age": 22,
-#     "course": "BCA"
-# }
-
-# print(student.keys())
-# print(student.values())
-
-# student["college"]="ABC"
-# print(student)
-
-# student["age"]=23
-
-# print(student)
-
-# #13
-
-# marks = {
-#     "python": 80,
-#     "java": 70,
-#     "sql": 75
-# }
-
-# print(marks.keys())
-# print(marks.values())
-
-# for subject, score in marks.items():
-#     print(subject,"->",score)
-
-# #14
-
-# prices = {
-#     "apple": 100,
-#     "banana": 40,
-#     "orange": 60
-# }
-
-# max_item = max(prices, key=prices.get)
-# print(max_item)
-
-# for item in prices:
-#     prices[item] += 10
-
-# print(prices)
+enames=['sg','pg','rg','modi']
+for ename in enames:
+    print(ename)
 
 
-# #15
-
-# a = [1, 2, 3]
-# b = a
-# b.append(4)
-# print(a)
-# # a changes because a=b
-
-# #16
-
-# x = (1, 2, 3) # It's a tuple which can't be mutable
-# y = list(x) # So we changed it into a list which is mutable
-# y.append(4) # Then added an element to the list
-# print(x, y) # now printing both tuple and list
- 
-
-# #17
-
-# # d = {
-# #     [1, 2]: "hello" # Typeerror: unhashable type : List
-# # }
+eids=(101,102,103,101,102,103)
+for eid in eids:
+    print(eid)
 
 
+uids={101,101,102,103}
+for uid in uids:
+    print(uid)
+
+employees=[
+    {'eid':101,'ename':'rahul','gender':'male'},
+    {'eid':102,'ename':'sonia','gender':'female'},
+    {'eid':103,'ename':'priya','gender':'female'}
 
 
+]
+
+for emp in employees:
+    print(emp["ename"])
+
+#1. Take an input from user and check whether it's a 3 digit number or not
+num=int(input("Enter a number:"))
+
+if num >= 100 and num < 1000:
+    print("It's a 3 digit number")
+else:
+    print("It's not a 3 digit number")
+print(type(num))
