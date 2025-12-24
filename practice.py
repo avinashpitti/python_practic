@@ -1,28 +1,15 @@
-text="Helloworld"
+scores=[12,29,45,104,56,34,19,5]
+ 
+total=0
+for score in scores:
+    total+=score
+print(f'total runs scored by all is {total}')
 
 
-for char in text[:5]:
-    print(char,end=" ")
-print()
-    
+cricketers_score=[19,28,45,104,56,34,19,5]
 
-print
+total_score=sum(cricketers_score)
+print(f"Total runs scored by cricketers is {total_score}")
 
-employee={
-    "id":101,
-    "name":"avinash",
-    "dept":"IT Services"
-}
-
-for emp in employee:
-    print(emp)
-
-for value in employee.values():
-    print(value)
-
-for key,value in employee.items():
-    print(key,":",value)
-
-print(employee["name"])
-print(employee["id"])
-print(employee["dept"])
+print(max(cricketers_score))
+print(min(cricketers_score))
