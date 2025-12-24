@@ -105,17 +105,30 @@ employees =[
 #print all female employees
 #print no. of male employees
 #print no. of female employees
-#print no of employees
 
+for emp in employees:
+    if emp['gender']=='Male':
+        print(emp['ename'])
+
+print("**********************")
+
+
+#pythonic way
 females=[emp["ename"] for emp in employees if emp["gender"]=='Female'] 
 print(females)
 
-males=[emp["ename"] for emp in employees if emp['gender']=="Male"]
-print(males)
+count=0
+for emp in employees:
+    if emp['gender']=='Male':
+        count+=1
+print("No of male employees: ",count)
 
-female_count=len([emp for emp in employees if emp['gender']=='Female'])
-print(f'count of female employees is {female_count}')
+count=0
+for emp in employees:
+    if emp['gender']=='Female':
+        count+=1
+print("No of female employees: ",count)
 
-male_count=len([emp for emp in employees if emp['gender']=='Male'])
-print(f'count of male employees is {male_count}')
+ 
+
       
