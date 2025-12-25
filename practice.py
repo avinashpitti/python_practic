@@ -123,4 +123,46 @@ for employee in employees:
     else:
         print('Regular Employee')
 
+print("--------------------")
+
+
+
+#12. Print “Young”, “Middle-aged”, or “Senior” based on age:
+# ● <40 → Young
+# ● 40–59 → Middle-aged
+# ● >=60 → Senior
+
+for employee in employees:
+    if employee['age']<40:
+        print(f'{employee["ename"]} is young')
+    elif employee["age"]>=40 and employee["age"]<60:
+        print(f'{employee["ename"]} is Middle-aged')
+    else:
+        print(f'{employee["ename"]} is Senior')
+
+print("--------------------")
+
+
+#13. Print employees eligible for retirement (age ≥ 60).
+
+for employee in employees:
+    if employee["age"]>=60:
+        print(employee["ename"])
+
+print("--------------------")
+
+#14. Check if there is any employee above 80 years and print their name.
+
+for employee in employees:
+    if employee["age"]>80:
+        print(employee["ename"])
+
+
+print("--------------------")
+
+#15. Print employee name with label “Actor” if Male else “Actress”.
+
+
+
+
 
