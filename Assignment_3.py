@@ -138,18 +138,113 @@
 #     print(f'{num1} and {num2} are equal.')
 
 
-#13.Program to print the greatest number in given three numbers?
+# #13.Program to print the greatest number in given three numbers?
 
-num1=int(input("Enter first number: "))
-num2=int(input("Enter second number: "))
-num3=int(input("Enter third number: "))
+# num1=int(input("Enter first number: "))
+# num2=int(input("Enter second number: "))
+# num3=int(input("Enter third number: "))
 
-if num1> num2 and num1>num3:
-    print(f"{num1}  i.e.. first number greatest")
-elif num2>num1 and num2>num3:
-    print(f'{num2} i.e.. second number greatest')
-elif num3>num1 and num3>num2:
-    print(f'{num3} i.e.. third number greatest')
-else:
-    print("Two or more values are equal.")
+# if num1> num2 and num1>num3:
+#     print(f"{num1}  i.e.. first number greatest")
+# elif num2>num1 and num2>num3:
+#     print(f'{num2} i.e.. second number greatest')
+# elif num3>num1 and num3>num2:
+#     print(f'{num3} i.e.. third number greatest')
+# else:
+#     print("Two or more values are equal.")
+
+
+# #14.Program to print given 3 numbers in ascending order?
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# c=int(input("Enter third number: "))
+
+# if a<=b and a<=c:
+#     if b <= c :
+#         print(a,b,c)
+#     else:
+#         print(a,c,b)
+# elif b<=a and b<=c:
+#     if a<=c:
+#         print(b,a,c)
+#     else:
+#         print(b,c,a)
+# else:
+#     if b<=a:
+#         print(c,b,a)
+#     else:
+#         print(c,a,b)
+
+
+# #15.Program to print given 3 numbers in descending order?
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# c=int(input("Enter third number: "))
+
+
+# if a>=b and a>=c:
+#     if b>=c:
+#         print(a,b,c)
+#     else:
+#         print(a,c,b)
+# elif b>=a and b>=c:
+#     if a>=c:
+#         print(b,a,c)
+#     else:
+#         print(b,c,a)
+# else:
+#     if a>=b:
+#         print(c,a,b)
+#     else:
+#         print(c,b,a)
+
+
+# #16.Program to print min number in given 3 numbers ?
+
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# c=int(input("Enter third number: "))
+
+# if a<=b and a<=c:
+#     print(f"{a} is the minumum value")
+# elif b<=a and b<=c:
+#     print(f"{b} is the minimum value")
+# else:
+#     print(f"{c} is the minumum value")
+
+
+# #17.Program to print min number in given 3 numbers ?
+
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# c=int(input("Enter third number: "))
+
+# if a>=b and a>=c:
+#     print(f"{a} is the maximum value")
+# elif b>=a and b>=c:
+#     print(f"{b} is the maximum value")
+# else:
+#     print(f"{c} is the maximum value")
+
+
+# #  18.Print min number in given 3 numbers - using Ternary Operator?
+
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# c=int(input("Enter third number: "))
+
+# min_value = a if (a <= b and a <= c) else (b if b <= c else c)
+
+# print(f"{min_value} is the minimum value")
+
+#19.Print max numbers in given 3 numbers- using Ternary Operator?
+
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+c=int(input("Enter third number: "))
+
+max_value= a if(a>=b and a>=c) else (b if b >=c else c)
+print(f'{max_value} is the maximum value')
+
+
 
