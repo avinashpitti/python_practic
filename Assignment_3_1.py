@@ -144,6 +144,7 @@ print('********13 completed********')
 for i in range(1,11):
     print(i*4)
 
+print('********14 completed********')
 
 #15.Program first ten multiples of 5 using a while loop(5,10,15,20...)?
 
@@ -152,3 +153,53 @@ i=1
 while i <=10 :
     print(i*5)
     i+=1
+
+print('********15 completed********')
+
+
+#16.Program to print a multiplication table of 6 using a for loop.
+
+num=6
+for i in range(1,11):
+    print(f'{num}x{i}={num*i}')
+
+print('********16 completed********')
+
+#17.Program to print a multiplication table of 6 using a while loop.
+
+num=6
+i=1
+
+while i <= 10:
+    print(f'{num}x{i}={num*i}')
+    i+=1
+
+print('********17 completed********')
+
+
+# 18. Program Factors of 24 using while loop
+
+num=24
+i=1
+
+while i <= num :
+    if num % i ==0 :
+        print(i)
+    i+=1
+
+print('********18 completed********')
+
+# 19. Program to print the reverse of digits of numbers.
+
+num=int(input("Enter a number: "))
+
+rev=0
+
+while num > 0 :
+    digit=num % 10
+    rev=rev*10+digit
+    num//=10
+print(rev)  
+
+
+
