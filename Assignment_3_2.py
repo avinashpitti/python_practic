@@ -142,3 +142,18 @@ for i in range(1,n+1):
     for j in range(i):
         print(i,end=' ')
     print()
+
+print('-----------11-----------------')
+
+
+# 12.Print Right Angle Triangle with Sequence of Digits - each row
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+
+count=0
+for i in range(1,5):
+    for j in range(1):
+        count+=i
+    print(count)
