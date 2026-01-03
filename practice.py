@@ -1,96 +1,154 @@
-# import random
+#1.Variable basics
+Name="Avinash"
 
-# print(random.randint(1,100)) 
+Age=22
 
-# print(random.random())
+Height= 5.2
 
-# import datetime
+student=True
 
-# now=datetime.datetime.now()
+std=15
 
-# print("present date and time ", now)
+print(f'Name : {Name}')
+print(f'Age : {Age}')
+print(f'Height : {Height}')
+print(f'student : {student}')
+print('std :',std)
+print(f'std : {std}')
 
-# print("year",now.year)
-# print("month",now.month)
-# print("date",now.day)
-# print('hour',now.hour)
-# print('minute',now.minute)
-# print('second',now.second)
+print(type(Name))
 
-# today=datetime.date.today()
-# print(today)
+print(type(Age))
 
-# d=datetime.date(2023,5,12)
-# print(d)
+print(type(Height))
 
-# #1️⃣ Even or Odd
+print(type(student))
 
-# num=int(input("Enter a number: "))
+#2.Typechecking
+x = 10
+y = 10.5
+z = "Python"
+a = True
 
-# if num %2==0:
-#     print(f'{num} is an even number')
-# else:
-#     print(f'{num} is an odd number.')
+print(f'data type of {x} is { type(x)}')
+print(f'data type of {y} is {type(y)}')
+print(f'data type of {z} is {type(z)}')
+print(f'data type of {a} is {type(a)}')
 
-# # 2️⃣ Positive, Negative or Zero
+#3.Multiple assignment
+a,b,c=5,10,15
+print(f'sum of numbers is : {a+b+c}')
 
-# num=int(input("Enter a number: "))
-# if num>=1:
-#     print(f'{num} is a positive number')
-# elif num==0:
-#     print(f'{num} is neither positive nor negative.')
-# else:
-#     print(f'{num} is a negative number.')
+#4.List
 
-# # 3️⃣ Count Vowels in a String
+info=['Avinash',22,'Python']
+print(info)
+print(info[1])
+info[2]='Python Full Stack'
 
-# para='I am learning python fullstack development.'
+print(info)
 
-# count=0
+#5.Tuple
 
-# for ch in para.lower():
-#     if ch in ('a','e','i','o','u'):
-#         count+=1
-# print(count)
+my_info=('Avi',23,5.2,True,'Bangalore')
+print(my_info)
+print(my_info[0][0])
+print(my_info[-1][-1])
 
-# length=print(len(para))
+# my_info[2]=8 #TypeError: 'tuple' object does not support item assignment
 
-# rev=''
-# for ch in para:
-#     rev=ch+rev
+#Bonus question
 
-# print(rev)
+# The main difference between a list and a tuple is mutable and immutable respectively.
 
+print("********** Level 1 done **********")
 
-# # Take input from the user and reverse it using loop
+#6.set practice
 
-# name=input("Enter your name: ")
-# rev=''
-# for ch in name:
-#     rev=ch+rev
-# print(f'Your name is {name}')
-# print(f'Your reversed name is {rev}')
+nums = [1, 2, 2, 3, 4, 4, 5]
 
+nums=set([1, 2, 2, 3, 4, 4, 5])
+print(type(nums))
 
-# Find the largest number in a list without using max()
+print(nums)
 
-nums=[3,6,78,12,35,99,1]
+nums.add(6)
 
-largest=nums[0]
+nums.remove(2) # nums.remove gives error if not present
 
-for num in nums:
-    if num > largest:
-        largest=num
-print(largest)
+#nums.discard(2) # No error
 
-# count frequency of elements:
-nums= [1, 2, 2, 3, 1, 4, 2]
+print(nums)
 
-# reverse a string
+# Duplicates are removed automatically
 
-subject='python'
-rev=''
+#7. Dictionary
 
-for ch in subject:
-    rev = ch+rev
-print(rev)
+Avi_info={
+    'name' : "Avinash",
+    'age' : 22,
+    'course' : 'Python',
+    'city' : 'Bengaluru'
+}
+
+print(Avi_info)
+
+print(Avi_info['course'])
+Avi_info['city']='Hyderabad'
+print(Avi_info)
+
+Avi_info['email']='avinash123@gmail.com'
+print(Avi_info)
+
+#8. operators +conditionals
+
+num=-45
+
+if num > 0 :
+    print('positive')
+elif num==0 :
+    print('zero')
+else : 
+    print('Negative')
+
+print('*********** level 2 completed *************')
+
+#9. for loops print numbers from 1 to 10
+
+for i in range(1,11):
+    print(i)
+
+#10. Find the sum of numbers from 1 to 100 using a loop
+n=100
+sum=0
+
+for i in range(1,n+1):
+    
+    sum+=i
+print(f'The sum of numbers from 1 to 100 is {sum}')
+
+#11. print only even numbers from 11 to 20
+
+evens=[]
+for i in range(11,21):
+    if i % 2 ==0:
+        # print(f'The even numbers from 11 to 20 is {i}',end=' ')
+        # evens.append(i)
+        evens.append(str(i))
+# print(f'The even numbers from 11 to 20 is {evens}')
+print(" ".join(evens))
+
+#12. Print numbers from 10 to 1 using a while loop.
+
+i=10
+
+while i >= 1:
+    print(i)
+    i-=1
+
+# Bonus
+
+# break : is used to stop the iteration
+# continue : is used to skip the current iteration
+
+#11. I need all the values in the single line.
