@@ -132,7 +132,6 @@ print(f'The sum of numbers from 1 to 100 is {sum}')
 evens=[]
 for i in range(11,21):
     if i % 2 ==0:
-        # print(f'The even numbers from 11 to 20 is {i}',end=' ')
         # evens.append(i)
         evens.append(str(i))
 # print(f'The even numbers from 11 to 20 is {evens}')

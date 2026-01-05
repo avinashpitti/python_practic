@@ -70,10 +70,56 @@ def user_details(**info):
         print(key, ":", value)
 user_details(name="Avinash", age=22, city="Bangalore")
 
+def calc(a,b):
+    return a+b,'hello'
+result=calc(10,20)
+
+print(result)
+
+print("*****************************")
 
 
+def outer():
+    print('outer function starts')
+
+    def inner():
+        print('Inner function')
+
+    inner()
+    inner()
+    inner()
+
+outer()
+outer()
+
+print("*****************************")
 
 
+def outer():
+    print('outer function started')
+
+    def inner():
+        print("inner function")
+    
+    return inner
+
+outer()()
+
+print("*****************************")
+
+def outer():
+    print('outer function started')
+
+    def inner():
+        print("inner function")
+    
+    return inner
+
+x=outer()
+x()
+x()
+
+print("*****************************")
 
 
 
