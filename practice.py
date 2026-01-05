@@ -1,22 +1,18 @@
-# positional arguments
+def my_func():
+    print("hello python")
+my_func()
+my_func()
+my_func()
 
-def cal(a,b):
-    return a+b
-print(cal(5,10))
+# def my_func():
+#     print('hello')#TypeError: my_func() takes 0 positional arguments but 1 was given
 
-def calc(a,b):
-    print(a+b)
-calc(5,110)
-calc(5,110)
-calc(5,110)
-calc(5,110)
+# my_func('avinash')
 
+def my_fun(name,age=22):
+    print('hello', name,age)
 
-
-def cal(a,b):
-    return a+b
-res=cal(15,10)
-print(res)
-print(res)
-print(res)
+my_fun('avinash',)
+my_fun('ramesh',)
+my_fun('mahesh',)
 
