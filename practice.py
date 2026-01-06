@@ -1,51 +1,47 @@
-# even or odd
+def outer():
+    def inner():
+        print("This is an inner function")
+    inner()
+outer()
+
+print('************************')
+
+def outer():
+    name="Avinash"
+    print(name)
+    def inner():
+        print(f"hello {name}")
+    inner()
+outer()
+
+print('************************')
 
 
-def even_odd(num):
-    if num%2==0:
-        print('even')
-    else:
-        print('odd')
+def outer():
+    name='amar'
+    
+    def inner():
+        print(f'hello {name}')
 
-even_odd(21)
-even_odd(28)
-even_odd(0)
-even_odd(-34)
-even_odd(-43)
+    inner()
+outer()
 
-print('******************')
+print('************************')
 
-def evenodd(num):
-    if num%2==0:
-        return 'even'
-    else:
-        return 'odd'
-print(evenodd(22))
-print(evenodd(33))
-print(evenodd(-12))
-print(evenodd(-34))
-print(evenodd(0))
+def outer():
+    x=10
+    print(x)
+    def inner():
+        print(x+12)
+    inner()
+outer()
 
+print('************************')
 
-print('******************')
-
-#prime
-
-def is_prime(n):
-    if n > 1 :
-        for i in range(2,int(n**0.5)+1):
-            if n % i ==0:
-                print('Not a prime')
-                break
-        else:
-            print('prime')
-    else:
-        print('Not a prime')
-is_prime(21)
-is_prime(23)
-is_prime(31)
-
-
-
-
-
+def outer():
+    x=5
+    def inner():
+        return x+4
+    return inner
+func=outer()
+print(func())
