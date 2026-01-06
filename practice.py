@@ -1,47 +1,20 @@
-def outer():
-    def inner():
-        print("This is an inner function")
-    inner()
-outer()
 
-print('************************')
+add=lambda a,b :a+b
 
-def outer():
-    name="Avinash"
-    print(name)
-    def inner():
-        print(f"hello {name}")
-    inner()
-outer()
+print(add(2,3))
 
-print('************************')
+square= lambda x:x*x
+print(square(5))
 
 
-def outer():
-    name='amar'
+cube=lambda x:x*x*x
+print(cube(5))
+
+even_odd=lambda n : 'Even' if n%2==0 else 'odd'
+print(even_odd(21))
+print(even_odd(76))
+
+add_10 = lambda x : x+10
+print(add_10(32))
     
-    def inner():
-        print(f'hello {name}')
 
-    inner()
-outer()
-
-print('************************')
-
-def outer():
-    x=10
-    print(x)
-    def inner():
-        print(x+12)
-    inner()
-outer()
-
-print('************************')
-
-def outer():
-    x=5
-    def inner():
-        return x+4
-    return inner
-func=outer()
-print(func())
