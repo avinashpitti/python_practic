@@ -1,12 +1,39 @@
-def add(a,b):
-    return a+b
-print(add(5,8))
-print((f'The sum of numbers is {add(4,2)}'))
+def outer():
+    print("outer functon")
 
-def sub(a,b):
-    return a-b
+    def inner():
+        print("inner function")
+    inner()
+outer()
 
-result1=sub(10,5)
-result2=sub(5,10)
-print(f'The difference of two values is {result1}')
-print(f'The difference of two values is {result2}')
+print('**************************')
+
+def outer(name):
+    print('outer function', name)
+
+    def inner(name):
+        print('inner function', name)
+    inner('avinash')
+outer('avinash')
+
+print('**************************')
+
+
+def outer():
+    print('outer function')
+
+    def inner(name):
+        print('inner function', name)
+    inner('avinash')
+outer()
+
+print('**************************')
+
+def outer(name):
+    print("outer function",name)
+
+    def inner():
+        print("inner function")
+    inner()
+outer('avinash')
+
