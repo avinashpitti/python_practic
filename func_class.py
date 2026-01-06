@@ -1,3 +1,17 @@
+def greet():
+    print("hello guys")
+greet()
+greet()
+greet()
+
+
+def greets(name):
+    print('hello', name)
+greets('avinash')
+greets('amar')
+
+
+
 # def calc(a,b):
 #     return a+b
 # calc(10) #TypeError: calc() missing 1 required positional argument: 'b'
@@ -99,11 +113,12 @@ def outer():
     print('outer function started')
 
     def inner():
-        print("inner function")
+        print(" This is inner function")
     
     return inner
 
-outer()()
+x=outer()()
+
 
 print("*****************************")
 
@@ -118,8 +133,35 @@ def outer():
 x=outer()
 x()
 x()
+x()
 
 print("*****************************")
+
+def out():
+    name='avinash'
+    def inside():
+        print('Hello',name)
+    inside()
+out()
+
+print("*****************************")
+
+
+def outsid():
+    name='srinvas'
+    def insid():
+        print('Hello',name,'Bro')
+    insid()
+outsid()
+
+print("*****************************")
+
+
+ 
+
+
+
+
 
 
 
