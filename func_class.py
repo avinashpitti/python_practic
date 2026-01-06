@@ -157,11 +157,45 @@ outsid()
 print("*****************************")
 
 
- 
+def user_func():
+    print("user function starts")
+    def login():
+        return True
+    def logout():
+        return False
+    return login # login() then bool object is not callable
+    
+x=user_func()
+login()
+
+print("*****************************")
 
 
+# A lambda function is a small, anonymous (nameless) function written in one line.
 
+addplusone=lambda a:a+1
+r1=addplusone(10)
+print(r1)
 
+#converting lambda function to normal def function
+#lambda function
+squareit=lambda x:x*x
+
+r1=squareit(10)
+print(r1)
+
+#def function
+
+def squareit(x):
+    return x*x
+result=squareit(10)
+print(result)
+
+# filter in lambda function
+
+# numbers=[1,2,3,4,5,6,7,8,9,10]
+
+print(list(filter(lambda num:num%2==0,[1,2,3,4,5,6,7,8] )))
 
 
 
