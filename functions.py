@@ -152,12 +152,6 @@ print(user_details(name='avinash',city='bangalore',gender='Male'))
 print(user_details(name='chandu',city='hyderabad'))
 
 
-# return multiple values from function
-
-def operations(a,b):
-    return a+b,a-b,a*b,a/b
-w,x,y,z=operations(10,5)
-print(w,x,y,z)
 
 
 #Local vs Global variable
@@ -194,25 +188,6 @@ def is_prime(n):
 
 print(is_prime(5))
 print(is_prime(51))
-
-x=lambda a :a+7
-print(x(4))
-
-y= lambda b : b*4
-print(y(5))
-
-z= lambda c : c-4
-print(z(32))
-
-
-def myfunc(n):
-    return lambda a:a*n
-
-mydoubler=myfunc(7)
-print(mydoubler(5))
-
-
-
 
 
 
