@@ -1,31 +1,32 @@
-# Decorator is a function,it takes one function as an argument,
-# and modify the functionality and returns a modified function as a value.
+def greet():
+    print('hello')
+x=greet
+x()
 
-# without decorators : not validating login status
-def home_page(name,login_status):
-    return 'home page'
-
-
-def product_page(name,login_status):
-    return 'product page'
-
-def order_page(name,login_status):
-    return 'order page'
-
-def profile_page(name,login_status):
-    return 'profile page'
-
-
-print(home_page('RG',False))
-print(product_page('RG',False))
-print(order_page('RG',False))
-print(profile_page('RG',False))
-
-
-# with decorators
+def greeting():
+    return 'hello,guys'
+x=greeting
+print(x())
 
 
 
+def outer():
+    text_outer = 'This is an outer function.'
+    
+    def inner():
+        return 'This is an inner function.'
+    
+    text_inner = inner()
+    return text_outer, text_inner # Returning two values
 
+y, z = outer() # Unpacking the two values
+print(y)
+print(z)
 
+def say_hello():
+    print("Hello!")
 
+def execute(func):
+    func()
+
+execute(say_hello)
