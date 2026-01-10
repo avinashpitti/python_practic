@@ -34,3 +34,30 @@ fruits.append('kiwi')
 print(fruits)
 fruits.remove('banana')
 print(fruits)
+
+#4
+
+numbers=(1,2,3)
+
+nums=set(numbers)
+
+print(f'nums before adding a number : {nums}')
+
+nums.add(4)
+print(f'nums after adding a number : {nums}')
+
+my_details={
+    'name':'Avinash',
+    'age': 22,
+    'course':'python'
+}
+
+print(f"my course : {my_details['course']}")
+
+my_details['age']=23
+
+print(f'my updated age : {my_details['age']}')
+
+my_details['city']='bangalore'
+
+print(my_details)
