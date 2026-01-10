@@ -1,16 +1,36 @@
-def smart_div(func):
-    def inner(a, b):
-        if b == 0:
-            print("cannot divide by zero")
-        else:
-            return func(a, b)
-    return inner
+#1
 
+name='avinash'
+age=22
+height=1.56
+student=True
 
-@smart_div
-def calc(a, b):
-    print(a / b)
+print(name,age,height,student)
 
+#2
 
-calc(10, 5)
-calc(10, 0)
+a=10
+b=3
+
+sum=a+b
+difference=a-b
+multiplication=a*b
+division=a/b
+remainder=a%b
+
+print(sum)
+print(difference)
+print(multiplication)
+print(division)
+print(remainder)
+
+#3
+
+fruits=['orange','banana','apple','guava','papaya']
+
+print(fruits[0])
+print(fruits[-1])
+fruits.append('kiwi')
+print(fruits)
+fruits.remove('banana')
+print(fruits)

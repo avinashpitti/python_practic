@@ -1,7 +1,16 @@
-def login_req(func):
-    def inner(name, login_status):
-        if not login_status:
-            print("Login Required")
+def smart_div(func):
+    def inner(a,b):
+        if b==0:
+            print('cannot divide by zero')
         else:
-            return func(name, login_status)
-    return inner
+            return func(a,b)
+        return inner
+    
+@smart_div
+
+def calc(a,b):
+    print(a/b)
+
+calc(10,5)
+calc(10,0)
+
