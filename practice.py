@@ -1,18 +1,9 @@
-#6
+#while loop
 
-num=int(input('Enter a number: '))
+i=10
 
-if num % 2 ==0:
-    print('Even number')
-else:
-    print('Odd number')
+while i >= 1:
+    
+    print(i)
+    i-=1
 
-#7
-
-for i in range(1,11):
-     
-    if i==5:
-        continue
-    if i==8:
-        break
-    print(i)  
