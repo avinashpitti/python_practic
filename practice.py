@@ -1,7 +1,12 @@
-#9
+# 10
 
-def add_numbers(a,b):
-    return a+b
-result=add_numbers(12,32)
+def count_vowels(word):
+    count=0
+    for ch in word.lower():
+        if ch in 'aeiou':
+            count+=1
 
-print(result)
+    return count
+
+text ='I am learning python stack development'
+print(count_vowels(text))
