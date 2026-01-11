@@ -1,9 +1,7 @@
-#while loop
+#9
 
-i=10
+def add_numbers(a,b):
+    return a+b
+result=add_numbers(12,32)
 
-while i >= 1:
-    
-    print(i)
-    i-=1
-
+print(result)
