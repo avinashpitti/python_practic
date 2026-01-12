@@ -1,12 +1,15 @@
-# 10
+# write a function that takes a list of numbers and returns the smallest
 
-def count_vowels(word):
-    count=0
-    for ch in word.lower():
-        if ch in 'aeiou':
-            count+=1
+nums=[9,57,124,555,3,20]
 
-    return count
+def smallest_num(nums):
+    small=nums[0]
 
-text ='I am learning python stack development'
-print(count_vowels(text))
+    for i in nums:
+        if i < small:
+            small=i
+
+    return small
+print(smallest_num(nums))
+
+    
