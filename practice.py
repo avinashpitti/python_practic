@@ -1,5 +1,7 @@
-def add_numbers(a,b):
-    return a+b
+a=int(input('Enter a number: '))
 
-print(f'The sum of 2 numbers is {add_numbers(17,12)}')
-print(f'The sum of 2 numbers is {add_numbers(45,19)}')
+def square_number(a):
+    return a**2
+user_input=square_number(a)
+
+print(f'square is : {user_input}')
