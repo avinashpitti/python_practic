@@ -1,13 +1,13 @@
 nums=[12,34,3,66,11]
 
-def max_value(nums):
-    max_value=nums[0]
-    for num in nums:
-        if num > max_value:
-           max_value=num
-    return max_value
+def min_value(nums):
+    min_value=nums[0]
+    for num in nums :
+        if num < min_value :
+            min_value = num
+    return min_value
 
-print( "maximum value of nums :", max_value(nums))
-        
+print(min_value(nums))
+
     
 
