@@ -1,7 +1,10 @@
 a=int(input('Enter a number: '))
 
-def square_number(a):
-    return a**2
-user_input=square_number(a)
+def odd_even(a):
 
-print(f'square is : {user_input}')
+    if a % 2 ==0:
+        return "even"
+    else:
+        return 'odd'
+    
+print(odd_even(a))
