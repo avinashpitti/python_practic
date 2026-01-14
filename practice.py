@@ -1,10 +1,13 @@
-a=int(input('Enter a number: '))
+text=input("Enter text : ")
 
-def odd_even(a):
+def count_vowels(text):
+    count=0
 
-    if a % 2 ==0:
-        return "even"
-    else:
-        return 'odd'
-    
-print(odd_even(a))
+    for ch in text.lower():
+        if ch in 'aeiou':
+            count+=1
+
+
+    return count
+
+print("vowels count :",count_vowels(text))
