@@ -1,13 +1,13 @@
-text=input("Enter text : ")
+nums=[12,34,3,66,11]
 
-def count_vowels(text):
-    count=0
+def max_value(nums):
+    max_value=nums[0]
+    for num in nums:
+        if num > max_value:
+           max_value=num
+    return max_value
 
-    for ch in text.lower():
-        if ch in 'aeiou':
-            count+=1
+print( "maximum value of nums :", max_value(nums))
+        
+    
 
-
-    return count
-
-print("vowels count :",count_vowels(text))
