@@ -1,8 +1,5 @@
-num=int(input('Enter a number : '))
+nums = [2, 5, 8, 11, 14, 17]
 
-if num > 0 :
-    print("Positive")
-elif num < 0 :
-    print("Negative")
-else:
-    print('Zero')
+for num in nums :
+    if num % 2 ==0:
+        print(num)
