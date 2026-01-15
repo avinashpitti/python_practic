@@ -1,13 +1,18 @@
-nums=[12,34,3,66,11]
+numbers=[12,34,3,66,11]
 
-def min_value(nums):
-    min_value=nums[0]
+def second_largest(nums):
+    largest=nums[0]
+    second = None
+
     for num in nums :
-        if num < min_value :
-            min_value = num
-    return min_value
+        if num > largest :
+            second = largest
+            largest=num
 
-print(min_value(nums))
+        elif num != largest and (second is None or num > second):
+            second = num
+    return second
 
+print(second_largest(numbers))
     
 
