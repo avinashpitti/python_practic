@@ -1,11 +1,11 @@
-nums = [1, 2, 3, 4, 6]
+nums = [12, 245, 3, 99, 231]
 
-def count_even(nums):
-    count=0
+def max_value(nums):
+    max_value=nums[0]
     for num in nums:
-        if num % 2 ==0:
-            count+=1
-    return count
+        if num > max_value :
+            max_value = num
 
-print(count_even(nums))
-    
+    return max_value
+
+print(max_value(nums))
