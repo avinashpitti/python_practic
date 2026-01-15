@@ -1,18 +1,4 @@
-numbers=[12,34,3,66,11]
+name=input('Enter your name : ')
+age=int(input('Enter your age : '))
 
-def second_largest(nums):
-    largest=nums[0]
-    second = None
-
-    for num in nums :
-        if num > largest :
-            second = largest
-            largest=num
-
-        elif num != largest and (second is None or num > second):
-            second = num
-    return second
-
-print(second_largest(numbers))
-    
-
+print(f'Hello, I am {name} will be {age+1} next year.')
