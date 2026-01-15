@@ -1,4 +1,8 @@
-name=input('Enter your name : ')
-age=int(input('Enter your age : '))
+num=int(input('Enter a number : '))
 
-print(f'Hello, I am {name} will be {age+1} next year.')
+if num > 0 :
+    print("Positive")
+elif num < 0 :
+    print("Negative")
+else:
+    print('Zero')
