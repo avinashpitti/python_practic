@@ -1,9 +1,9 @@
-nums = [129, 245, 113, 99, 231]
+nums = [129, 245, 113, 499, 231]
 
-def min_value(nums):
-    min_val=nums[0]
+def max_value(nums):
+    max_value=nums[0]
     for num in nums:
-        if num < min_val:
-            min_val=num
-    return min_val
-print(min_value(nums))
+        if num > max_value:
+            max_value=num
+    return max_value
+print(max_value(nums))
