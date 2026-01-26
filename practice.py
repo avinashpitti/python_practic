@@ -1,9 +1,6 @@
-nums = [129, 245, 113, 499, 231]
+num=int(input("Enter a number : "))
 
-def max_value(nums):
-    max_value=nums[0]
-    for num in nums:
-        if num > max_value:
-            max_value=num
-    return max_value
-print(max_value(nums))
+if num % 2 ==0:
+    print(f'{num} is an even number')
+else:
+    print(f'{num} is an odd number')
