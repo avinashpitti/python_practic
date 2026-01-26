@@ -1,8 +1,8 @@
-nums = [10, 20, 30, 40, 50]
+for i in range(1,11):
+    print(i)
 
-nums.append(60)
+for i in range(1,11):
+    if i % 2 ==0:
+        print(i)
 
-nums.remove(30)
 
-nums.pop(4)
-print(nums)
