@@ -1,8 +1,6 @@
-num=int(input("Enter a number : "))
+def greet(name):
+    print(f'hello {name}')
+greet('avinash')
+greet('srinivas')
+greet('chandu')
 
-if num > 0 :
-    print(f'{num} is positive')
-elif num < 0 :
-    print(f'{num} is negative')
-else:
-    print(f'{num} is zero')
