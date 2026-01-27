@@ -1,8 +1,8 @@
-for i in range(1,11):
-    print(i)
+num=int(input("Enter a number : "))
 
-for i in range(1,11):
-    if i % 2 ==0:
-        print(i)
-
-
+if num > 0 :
+    print(f'{num} is positive')
+elif num < 0 :
+    print(f'{num} is negative')
+else:
+    print(f'{num} is zero')
