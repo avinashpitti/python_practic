@@ -1,9 +1,7 @@
-def greet(name='guest'):
-    print(f'hello {name}')
-greet('Avinash')
-greet()
+def min_max(a,b):
+    return max(a,b),min(a,b)
 
-def calculate(a,b):
-    return a+b, a-b, a*b, a/b, a//b
-result=calculate(17,4)
-print(result)
+maximum,mininum=min_max(1,5)
+
+print(f'maximum value is {maximum}')
+print(f'minimum value is {mininum}')
