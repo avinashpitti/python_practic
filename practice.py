@@ -50,8 +50,19 @@ name='chandu'
 print(name)
 print(type(name))
 print(len(name))
+
 college='siddhartha degree college'
 print(college)
 print(type(college))
 print(len(college))
+
+# slicing : slicing is allowed on lists,tuples and strings
+
+print(college[::-1]) # It reverses the string
+print(college[1:7]) # start index is included, stop is excluded
+print(college[1:10:2])# start,stop,step
+print(college[:10])# It takes from 0(start) index to 9 index
+print(college[4:]) # It takes from 4 to end
+
+
 
